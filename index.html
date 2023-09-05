@@ -1,171 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style.css">
-<link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
 
-<title>Complete Responsive Portfolio Website</title>
+        header {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(rgba(105, 70, 74, 0.8), rgba(36, 34, 34, 0.2)), url("Background.jpg");
+            background-size: cover;
+        }
 
+        nav {
+            width: 100%;
+            height: 100px;
+            background-size: cover;
+            color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: sans-serif;
+        }
+
+        .logo {
+            font-size: 2em;
+            letter-spacing: 2px;
+
+        }
+
+        .Menu a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+        }
+
+        .Menu a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid pink;
+            transition: 0.4s linear;
+        }
+
+        .Menu a:hover:before {
+            width: 90%;
+        }
+
+        .Register a {
+            text-decoration: none;
+            color: black;
+            padding: 10px 20px;
+            font-size: 20px;
+            background: pink;
+            border-radius: 5px;
+            transition: 0.4s linear;
+        }
+
+        .Register a:hover {
+            background: transparent;
+            border: 1px solid red;
+        }
+
+        .h-txt {
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: black;
+        }
+
+        .h-txt span {
+            letter-spacing: 5px;
+        }
+
+        .h-txt h1 {
+            font-size: 3.5em;
+        }
+
+        .h-txt a {
+            text-decoration: none;
+            background: pink;
+            color: black;
+            padding: 15px, 25px;
+            letter-spacing: 5px;
+            transition: 0.4s linear;
+        }
+
+        .h-txt a:hover {
+            background: transparent;
+            border: 1px solid red;
+        }
+    </style>
 </head>
+
 <body>
-        
-<!-- HEADER -->
-<header class="l-header">
-<nav class="nav bd-grid">
-<div>
-<a href="#" class="nav__logo">PORTFOLIO</a>
-</div>
-
-<div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
-        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-         </ul>
-</div>
-
-<div class="nav__toggle" id="nav-toggle">
-<i class='bx bx-menu'></i>
-</div>
-</nav>
-</header>
-
-<main class="l-main">
-        <!--===== HOME =====-->
-<section class="home bd-grid" id="home">
-<div class="home__data">
-<h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Web Developer</span><br> Our Portfolio. </h1>
-
-<a href="#" class="button">Contact</a>
-</div>
-
-<div class="home__social">
-<a href="https://www.linkedin.com/in/ankit-yadav-805247238/"  target="_blank" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-<a href="" class="home__social-icon"><i class='bx bxl-behance' ></i></a>
-<a href=" "   target="_blank" class="home__social-icon"><i class='bx bxl-github' ></i></a>
-</div>
-
-<div class="home__img">    
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y29kaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="">
-</div>
-</section>
-
-<!--===== ABOUT =====-->
-<section class="about section " id="about">
-<h2 class="section-title">About</h2>
-
-<div class="about__container bd-grid">
-<div class="about__img">
-<img src="himanshu.jpg" alt="">
-</div>
-                    
-<div>
-<h2 class="about__subtitle">I'am Ankit Yadav</h2>
-<p class="about__text">I am a person with great passion a true free spirit. I don't work just to make a living but I work because it makes life worth living for. Skilled  Html5 | Css3 | Javascript | C Language | C++ | Bootstrap | Frontend Designer ....</p>           
-</div>                                   
-</div>
-</section>
-
-<!--===== SKILLS =====-->
-<section class="skills section" id="skills">
-<h2 class="section-title">Skills</h2>
-
-<div class="skills__container bd-grid">          
-<div>
-<h2 class="skills__subtitle">Profesional Skills</h2>
-<p class="skills__text">Html5 | Css | Javascript | C Language | C++ | Java Programming | .Net Framework | Bootstrap | Frontend Designer.</p>
-<div class="skills__data">
-<div class="skills__names">
-<i class='bx bxl-html5 skills__icon'></i>
-<span class="skills__name">HTML5</span>
-</div>
-<div class="skills__bar skills__html">
-
-</div>
-<div>
-<span class="skills__percentage">90%</span>
-</div>
-</div>
-<div class="skills__data">
-    <div class="skills__names">
-        <i class='bx bxl-css3 skills__icon'></i>
-        <span class="skills__name">CSS</span>
-    </div>
-    <div class="skills__bar skills__css">
-        
-    </div>
-    <div>
-        <span class="skills__percentage">75%</span>
-    </div>
-</div>
-<div class="skills__data">
-    <div class="skills__names">
-<i class='bx bxl-javascript skills__icon' ></i>
-<span class="skills__name">JAVASCRIPT</span>
-</div>
-<div class="skills__bar skills__js">
-</div>
-<div>
-<span class="skills__percentage">60%</span>
-</div>
-</div>
-<div class="skills__data">
-    <div class="skills__names">
-        <i class='bx bxs-paint skills__icon'></i>
-        <span class="skills__name">C++</span>
-    </div>
-    <div class="skills__bar skills__ux">
-        
-    </div>
-    <div>
-        <span class="skills__percentage">75%</span>
-    </div>
-</div>
-</div>
-                    
-<div>              
-<img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29kaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="" class="skills__img">
-</div>
-</div>
-</section>
-
-<!--===== WORK =====-->
-<section class="work section" id="work">
-<h2 class="section-title">Work</h2>
-<div class="work__container bd-grid">
-<div class="work__img">
-        <img src="js.png" alt="">
-</div>
-</div>
-</section>
-
-<!--===== CONTACT =====-->
-<section class="contact section" id="contact">
-<h2 class="section-title">Contact</h2>
-
-<div class="contact__container bd-grid">
-<form action="" class="contact__form">
-<input type="text" placeholder="Ankit Yadav" class="contact__input">
-<input type="mail" placeholder="ankit.....@gmail.com" class="contact__input">
-<textarea name="" id="" cols="0" rows="10" class="contact__input">Hello</textarea>
-<input type="button" value="Enter" class="contact__button button">
-</form>
- </div>
-</section>
-</main>
-
-<!--===== FOOTER =====-->
-<footer class="footer">
-        <p class="footer__title">Coding Master</p>
-        <div class="footer__social">
-<a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-<a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-<a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
-</div>
-</footer>
+    <header>
+        <nav>
+            <div class="logo">
+                <b>Oasis Infobyte</b>
+            </div>
+            <div class="Menu">
+                <a href="#"><b>Home</b></a>
+                <a href="#"><b>About</b></a>
+                <a href="#"><b>Services</b></a>
+                <a href="#"><b>Contact Us</b></a>
+            </div>
+            <div class="Register">
+                <a href="#">Register</a>
+        </nav>
+        <section class="h-txt">
+            <h1><b>LANDING PAGE</b></h1>
+            <h2><b>By Ankit Yadav @Oasis Infobyte intership</b></h2>
+            <br>
+            <h3><b>A landing page is one of the best web development projects for begineers.</b></h3>
+            <a href="#"><b>Intership</b></a>
+        </section>
+    </header>
 </body>
+
+<footer>
+    <p><a href="© Copyright OASIS INFOBYTE. All Rights Reserved Designed By Team OASIS" </a></p>
+</footer>
+
 </html>
